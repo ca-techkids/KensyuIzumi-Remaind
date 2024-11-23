@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "kensyu": "file:",
     "tech-kids-bot-gas": "github:ca-techkids/tech-kids-bot-gas",
     "typescript": "^5.7.2"
   },
