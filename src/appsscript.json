@@ -1,0 +1,22 @@
+{
+  "timeZone": "Etc/GMT-9",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Sheets",
+        "version": "v4",
+        "serviceId": "sheets"
+      }
+    ],
+    "libraries": [
+      {
+        "userSymbol": "TechKidsBotGAS",
+        "version": "0",
+        "libraryId": "1MsT4bkN-LvRE4tkOeCdcB6mJArVglunbg9YLVhfT0OGDUPKVFBdxva8M",
+        "developmentMode": true
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8"
+}
