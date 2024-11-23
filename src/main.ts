@@ -13,11 +13,11 @@ import { GoogleChat } from "tech-kids-bot-gas/dist/main";
 */
 function getDestinationAddresses(){
     // リマインドを送るメールアドレス一覧
-    const SEND_GMAIL_CELL = "B1";
+    const sendGmailCell = "B1";
 
 
     const spreadSheet = SpreadsheetApp.getActiveSheet();
-    const range = spreadSheet.getRange(SEND_GMAIL_CELL);
+    const range = spreadSheet.getRange(sendGmailCell);
 
     
     const sendGmails = range.getValue() as string;
@@ -35,11 +35,11 @@ function getDestinationAddresses(){
 */
 function getMessage(){
     // メッセージが記載されているセル
-    const MESSAGE_CELL = "B2";
+    const messageCall = "B2";
 
 
     const spreadSheet = SpreadsheetApp.getActiveSheet();
-    const range = spreadSheet.getRange(MESSAGE_CELL);
+    const range = spreadSheet.getRange(messageCall);
 
     
     // メッセージの内容を返す
