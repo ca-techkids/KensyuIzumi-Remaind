@@ -56,9 +56,9 @@ function main(){
     const googleChat = new TechKidsBotGAS.GoogleChat();
 
 
-    addresses.forEach((gmail) => {
+    addresses.forEach((address) => {
         googleChat.sendDirectMessage(
-            gmail,
+            address,
             { text: message },
             false
       );
