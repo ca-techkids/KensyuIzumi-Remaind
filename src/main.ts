@@ -20,12 +20,12 @@ function getDestinationAddresses(){
     const range = spreadSheet.getRange(sendGmailCell);
 
     
-    const sendGmails = range.getValue() as string;
+    const destinationAddresses = range.getValue() as string;
 
     
 
     // メンター名の一覧情報を返す
-    return sendGmails.split(",");
+    return destinationAddresses.split(",");
 }
 
 
@@ -51,12 +51,12 @@ function getMessage(){
 function main(){
     
     const message = getMessage();   // メッセージ
-    const gmails = getDestinationAddresses();   // ユーザー情報
+    const addresses = getDestinationAddresses();   // ユーザー情報
 
     const googleChat = new TechKidsBotGAS.GoogleChat();
 
 
-    gmails.forEach((gmail) => {
+    addresses.forEach((gmail) => {
         googleChat.sendDirectMessage(
             gmail,
             { text: message },
