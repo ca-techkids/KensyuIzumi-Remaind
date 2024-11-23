@@ -11,7 +11,7 @@ import { GoogleChat } from "tech-kids-bot-gas/dist/main";
  *          ","の間にスペースは入れないでください
  * "xxxx_xxxx@ca-techkids.com,xxxx_xxxx@ca-techkids.com,xxxx_xxxx@ca-techkids.com"
 */
-function getSendGmails(){
+function getDestinationAddresses(){
     // リマインドを送るメールアドレス一覧
     const SEND_GMAIL_CELL = "B1";
 
@@ -51,7 +51,7 @@ function getMessage(){
 function main(){
     
     const message = getMessage();   // メッセージ
-    const gmails = getSendGmails();   // ユーザー情報
+    const gmails = getDestinationAddresses();   // ユーザー情報
 
     const googleChat = new TechKidsBotGAS.GoogleChat();
 
