@@ -1,0 +1,19 @@
+{
+  "name": "kensyu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kensyu": "file:",
+    "tech-kids-bot-gas": "github:ca-techkids/tech-kids-bot-gas",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.85"
+  }
+}
